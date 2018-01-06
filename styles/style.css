@@ -1,0 +1,198 @@
+body {
+  position: relative;
+  font-family: arial,sans-serif;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  top: 0;
+}
+header
+{
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  top: 0;
+  height: 40px;
+  width: 100%;
+}
+.text-bar
+{
+	position:absolute;
+	line-height: 40px;
+	margin-right: 30px;
+	bottom:0;
+	right:0;
+}
+.head-bar-unit
+{
+	position: relative;
+	padding-left: 15px;
+	top: 10px;
+	color: #666;
+	font-size: 13px;
+}
+.head-bar-unit:hover
+{
+	text-decoration: underline;
+	cursor: pointer;
+}
+.apps
+{
+	position: relative;
+	top: 10px;
+	left:15px;
+	right:15px;
+	padding-right: 30px;
+	background-image: url(../img/apps.png);
+	background-repeat:no-repeat;
+}
+.apps:hover
+{
+	cursor: pointer;
+	background-image: url(../img/hover_apps.png);
+}
+.login
+{
+	position: relative;
+	top: 10px;
+	border: 1px solid #4285f4;
+	color: white;
+	margin-left: 15px;
+	padding: 6px 14px;
+	background-color: #4387fd;
+	font-weight: bold;
+	font-size: 13px;
+	border-radius: 4px;
+}
+.login:active
+{
+	cursor: default;
+	background-color: #3c7ae4;
+}
+.login:hover
+{
+	cursor:default;
+}
+.content {
+  text-align: center;
+  margin: 0;
+  padding-top: 13%;
+}
+#search
+{
+	position: relative;
+	margin-left: auto;
+    margin-right: auto;
+	box-shadow:0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
+	width:40%;
+	height:45px;
+}
+.search-field {
+  position:absolute;
+  display: inline-block;
+  padding-left: 0px;
+  width:100%;
+  height:45px;
+  left: 4px;
+  top: 4px;
+  text-align:center;
+  border: 0;
+}
+.text-field {
+  position:absolute;
+  width:80%;
+  height:35px;
+  left: 10px;
+  border: 0;
+  font-size: 16px;
+}
+.text-field:focus
+{
+	border: none;
+	outline: none;
+
+}
+#buttons
+{
+	position: absolute;
+	right: 30px;
+	display: inline-block;
+	height:40px;
+}
+#keyboard
+{
+	position: relative;
+	top: 18px;
+	left:15px;
+	right:15px;
+	padding-right: 30px;
+	background-image: url(../img/keyboard.png);
+	background-repeat:no-repeat;
+}
+#keyboard:hover
+{
+	cursor: pointer;
+	background-image: url(../img/keyboard_hover.png);
+}
+#microphone
+{
+	position: relative;
+	top: 10px;
+	left:15px;
+	right:15px;
+	padding-right: 30px;
+	padding-bottom: 30px;
+	background-image: url(../img/micro.png);
+	background-size: 24px 24px;
+	background-repeat:no-repeat;
+}
+.btn-main {
+  margin: 11px 4px;
+  padding: 0 16px;
+  height: 36px;
+  font-weight: bold;
+  background-color: #f2f2f2;
+  border: 1px solid #f2f2f2;
+  color: #757575;
+}
+.btn-main:hover {
+  border: 1px solid #c6c6c6;
+  box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+  color: #222;
+}
+footer {
+  position: absolute;
+  margin: 0;
+  height: 80px;
+  width: 100%;
+  bottom: 0;
+  background-color: #f2f2f2;
+  border-top: 1px solid #e4e4e4;
+}
+.by {  
+  line-height: 40px;
+  height: 40px;
+  font-size: 15px;
+  padding-left: 27px;
+  color: #666;
+}
+#left-bar
+{
+	left:0;
+}
+.fbar
+{
+	border-bottom: 1px solid #e4e4e4;
+}
+.footer-text
+{
+	position: relative;
+	padding-left: 27px;
+	color: #666;
+	font-size: 13px;
+}
+.footer-text:hover
+{
+	text-decoration: underline;
+	cursor: pointer;
+}
