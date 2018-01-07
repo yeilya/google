@@ -2,51 +2,189 @@
 <html>
 
 <head>
-	<meta charset="utf-8">
-	<link rel="shortcut icon" href="img/logo.ico">
-	<link rel="stylesheet" href="./styles/style.css">
-	<title>Google</title>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="img/logo.ico">
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Google</title>
+    <script src="scripts/script.js"></script>
 </head>
 
-<body>
-	<header>
+<body onclick="bodyClick()">
+<header>
 		<span class="text-bar">
-			<a class="head-bar-unit">Почта</a>
-			<a class="head-bar-unit">Картинки</a>
-			<a class="apps"></a>
-			<a class="login">Войти</a>
+			<a class="head-bar-unit" href="https://mail.google.com/mail/?tab=wm">Почта</a>
+			<a class="head-bar-unit" href="https://www.google.by/imghp?hl=ru&tab=wi">Картинки</a>
+			<a class="apps" onclick="apps()"></a>
+            <div id="div-apps">
+                <ul class="ul-apps">
+                <li class="li-apps">
+            <a class="a-apps" href="https://myaccount.google.com">
+              <div class="apps-img" id="account">
+                  <span class="apps-txt">Мой аккаунт</span>
+              </div>
+            </a>
+          </li>
+                <li class="li-apps">
+            <a class="a-apps" href="https://www.google.by/webhp?tab=ww&authuser=0">
+              <div class="apps-img" id="searchApp">
+                  <span class="apps-txt">Поиск</span>
+              </div>
+            </a>
+          </li>
+                <li class="li-apps">
+            <a class="a-apps" href="https://www.google.by/maps/">
+              <div class="apps-img" id="maps">
+                  <span class="apps-txt">Карты</span>
+              </div>
+            </a>
+          </li>
+                <li class="li-apps">
+            <a class="a-apps" href="https://www.youtube.com/?gl=BY">
+              <div class="apps-img" id="youtube">
+                  <span class="apps-txt">YouTube</span>
+              </div>
+            </a>
+          </li>
+                <li class="li-apps">
+            <a class="a-apps" href="https://play.google.com/store?hl=ru&tab=w8">
+              <div class="apps-img" id="google-play">
+                  <span class="apps-txt">Play</span>
+              </div>
+            </a>
+          </li>
+                <li class="li-apps">
+            <a class="a-apps" href="https://mail.google.com/mail/?tab=wm&authuser=0">
+              <div class="apps-img" id="email">
+                  <span class="apps-txt">Почта</span>
+              </div>
+            </a>
+          </li>
+                <li class="li-apps">
+            <a class="a-apps" href="https://drive.google.com/drive/u/0/?tab=wo">
+              <div class="apps-img" id="drive">
+                  <span class="apps-txt">Диск</span>
+              </div>
+            </a>
+          </li>
+                <li class="li-apps">
+            <a class="a-apps" href="https://www.google.com/calendar?tab=wc&authuser=0">
+              <div class="apps-img" id="calendar">
+                  <span class="apps-txt">Календарь</span>
+              </div>
+            </a>
+          </li>
+                <li class="li-apps">
+            <a class="a-apps" href="https://plus.google.com/u/0/discover">
+              <div class="apps-img" id="google-plus">
+                <span class="apps-txt">Google+</span>
+              </div>
+            </a>
+          </li>
+                <li class="li-apps">
+            <a class="a-apps" href="https://translate.google.by/">
+              <div class="apps-img" id="google-translate">
+                  <span class="apps-txt">Переводчик</span>
+              </div>
+            </a>
+          </li>
+                <li class="li-apps">
+            <a class="a-apps" href="https://photos.google.com/?pageId=none">
+              <div class="apps-img" id="google-photo">
+                <span class="apps-txt">Фото</span>
+              </div>
+            </a>
+          </li>
+              </ul>
+                <a id="apps-yet" onclick="yetApps()">Ещё</a>
+                <div id="div-yet-apps">
+                <ul class="ul-apps">
+                <li class="li-apps">
+            <a class="a-apps" href="https://docs.google.com/document/u/0/">
+              <div class="apps-img" id="docs">
+                  <span class="apps-txt">Документы</span>
+              </div>
+            </a>
+          </li>
+                <li class="li-apps">
+            <a class="a-apps" href="https://www.blogger.com/about/?r=1-null_user">
+              <div class="apps-img" id="blogger">
+                <span class="apps-txt">Blogger</span>
+              </div>
+            </a>
+          </li>
+                <li class="li-apps">
+            <a class="a-apps" href="https://contacts.google.com/">
+              <div class="apps-img" id="contacts">
+                <span class="apps-txt">Контанты</span>
+              </div>
+            </a>
+          </li>
+                <li class="li-apps">
+            <a class="a-apps" href="https://hangouts.google.com/?authuser=0">
+              <div class="apps-img" id="hangouts">
+                <span class="apps-txt">Hangouts</span>
+              </div>
+            </a>
+          </li>
+                <li class="li-apps" href="https://keep.google.com/u/0">
+            <a class="a-apps">
+                <div class="apps-img" id="google-keep">
+                    <span class="apps-txt">Google Keep</span>
+                </div>
+            </a>
+          </li>
+                <li class="li-apps">
+            <a class="a-apps" href="https://earth.google.com/static/9.2.47.8/app_min__ru.html?authuser=0">
+              <div class="apps-img" id="earth">
+                  <span class="apps-txt">Google Earth</span>
+              </div>
+            </a>
+          </li>
+                </ul>
+              <a id="apps-others" href="https://www.google.by/intl/ru/about/products/">Другие сервисы Google</a>
+            </div>
+            </div>
+			<a class="login" onclick="login()">Войти</a>
 		</span>
-	</header>
-	<div class="content">
-		<img src="img/google.png" alt="Google"/>
-		<div id="search"> 
-			<div class="search-field">
-				<input class="text-field" type="text">
-			</div>
-			<div id="buttons">
-				<a id = "keyboard"></a>
-				<a id = "microphone"></a>
-			</div>
-		</div>
-		<br>
-		<button class="btn-main">Поиск в Google</button>
-		<button class="btn-main">Мне повезёт!</button>
-	</div>
-	<footer>
-		<span class="by">Беларусь</span>
-		<div class="fbar">
-			<span id="left-bar" class = "text-bar">
-				<a class="footer-text">Реклама</a>
-				<a class="footer-text">Для бизнеса</a>
-				<a class="footer-text">Всё о Google</a>
+</header>
+<div class="content">
+    <img src="img/google.png" alt="Google"/>
+    <div id="search">
+        <div class="search-field">
+            <input id="text-field" onkeypress="return search(event)" type="text"/>
+        </div>
+        <div id="buttons">
+            <a id="keyboard"></a>
+            <a id="microphone"></a>
+        </div>
+    </div>
+    <br>
+    <button class="btn-main" onclick="search()">Поиск в Google</button>
+    <button class="btn-main" onclick="luck()">Мне повезёт!</button>
+</div>
+<footer>
+    <span class="by">Беларусь</span>
+    <div class="fbar">
+			<span id="left-bar" class="text-bar">
+				<a class="footer-text" href="https://www.google.by/intl/ru_by/ads/">Реклама</a>
+				<a class="footer-text" href="https://www.google.by/intl/ru/services">Для бизнеса</a>
+				<a class="footer-text" href="https://www.google.by/intl/ru_by/about/">Всё о Google</a>
 			</span>
-			<span class = "text-bar">
-				<a class="footer-text">Конфиденциальность</a>
-				<a class="footer-text">Условия</a>
-				<a class="footer-text">Настройки</a>
+        <span class="text-bar">
+				<a class="footer-text"
+                   href="https://www.google.by/intl/ru_by/policies/privacy/?fg=1">Конфиденциальность</a>
+				<a class="footer-text" href="https://www.google.by/intl/ru_by/policies/terms/regional.html">Условия</a>
+                <a class="footer-text" onclick="settings()">Настройки</a>
+                <div id="settings">
+                    <a class="a-settings" href="https://www.google.by/preferences?hl=ru-BY&fg=1">Настройка поиска</a>
+                    <a class="a-settings" href="https://www.google.by/advanced_search?hl=ru-BY&fg=1">Расширенный поиск</a>
+                    <a class="a-settings" href="https://myactivity.google.com/myactivity?hl=ru-BY&fg=1">История</a>
+                    <a class="a-settings" href="https://support.google.com/websearch#topic=3378866">Справка по поиску</a>
+                    <a class="a-settings" href="https://support.google.com/photos/answer/6156065?hl=ru&ref_topic=6156079">Отправить отзыв</a>
+                </div>
 			</span>
-		</div>
-	</footer>
+    </div>
+</footer>
 </body>
 
 </html>
